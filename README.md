@@ -7,9 +7,9 @@
 在圖像融合的部分是採用多通道的概念將圖片做疊加
 
 ## 主要環境
-keras 2.2.5
+keras == 2.2.5
 
-tensorflow-gpu 1.14.0
+tensorflow-gpu == 1.14.0
 
 ## 前置說明
 請先將database.zip解壓縮到同一資料中，database資料夾中包含訓練與驗證用的資料
