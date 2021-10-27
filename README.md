@@ -53,7 +53,7 @@ tensorflow-gpu == 1.14.0
 
 ![image](https://github.com/Jwander0820/Forecast-typhoon-rainfall-Unet/blob/main/img/201609271130_IR.png)
 
-4. 預測出來的雨量分布圖
+4. 預測出來的雨量分布圖 (RA+RD+IR)
 
 ![image](https://github.com/Jwander0820/Forecast-typhoon-rainfall-Unet/blob/main/img/201609271030_t%2B1_predict.png)
 
