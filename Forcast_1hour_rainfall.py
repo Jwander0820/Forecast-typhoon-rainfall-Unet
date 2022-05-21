@@ -28,7 +28,8 @@ if M < 0: # 跨時
     H = str(H)
 print(time)
 print(Y,m,d,H,Mdict[M])
-
+new_Mdict = {"00": "00", "10": "00", "20": "00", "30": "30", "40": "30", "50": "30", }  # 20220521改僅取00和30分的資料
+Mdict[M] = new_Mdict[Mdict[M]]
 my_headers = {'user-agent': 'my-app/0.0.1'}  #自訂表頭
 IR_url = f'https://www.cwb.gov.tw/Data/satellite/TWI_IR1_Gray_800/TWI_IR1_Gray_800-{Y}-{m}-{d}-{H}-{Mdict[M]}.jpg'
 RD_url = f'https://www.cwb.gov.tw/Data/radar/CV1_TW_3600_{Y}{m}{d}{H}{Mdict[M]}.png'
@@ -87,7 +88,7 @@ from keras import backend as K
 from keras.callbacks import (EarlyStopping, ModelCheckpoint, ReduceLROnPlateau,
                               TensorBoard)
 from keras.metrics import categorical_accuracy
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras.utils.data_utils import get_file
 from utils.model_output import *
 from PIL import Image   

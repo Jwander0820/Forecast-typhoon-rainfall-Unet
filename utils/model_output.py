@@ -75,10 +75,10 @@ class Unet:  #原始碼採預設形式，已轉為可外部修改的變數
         #RA_image = RA_image[:,:,:-1]
         RA_image = np.array(RA_image)/self.num_classes
         RA_image = cv2.merge([RA_image,RA_image,RA_image])
-        lon = Image.open("./database/train_data_GI/lon.png")  #經度圖像(以0~254 間格2做代替)
-        lat = Image.open("./database/train_data_GI/lat.png")  #緯度圖像(以0~254 間格2做代替)
-        lon = np.array(lon)/255
-        lat = np.array(lat)/255
+        # lon = Image.open("./database/train_data_GI/lon.png")  #經度圖像(以0~254 間格2做代替)
+        # lat = Image.open("./database/train_data_GI/lat.png")  #緯度圖像(以0~254 間格2做代替)
+        # lon = np.array(lon)/255
+        # lat = np.array(lat)/255
         
         if self.RD==True and self.IR==False and self.RA==False:   #RD
             res = cv2.merge([RD_image]) #圖像合成
